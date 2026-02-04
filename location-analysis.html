@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analýza lokality – porovnání regionálních cen</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script defer src="/assets/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Výrobní hala – web aplikace</div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Úvod</a></li>
+          <li><a href="/pages/expert-report.html">Znalecký posudek</a></li>
+          <li><a href="/pages/reaction.html">Naše reakce</a></li>
+          <li><a href="/pages/critique.html">Kritika</a></li>
+          <li><a href="/pages/price-estimate.html">Cenový odhad</a></li>
+          <li><a href="/pages/location-analysis.html" class="active">Analýza lokality</a></li>
+          <li><a href="/pages/summary.html">Souhrnný report</a></li>
+          <li><a href="/pages/calculator.html">Kalkulačka</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Analýza lokality a srovnání regionálních cen</h1>
+    <p>
+      Tato stránka poskytuje pohled na širší kontext průmyslového trhu v Pardubickém
+      kraji, včetně lokalit kolem Vysokého&nbsp;Mýta. Průmyslové nemovitosti v regionu
+      mají různorodé parametry – velikost, technický stav, napojení na sítě i
+      logistickou dostupnost. Naším cílem je porovnat nabízené haly podle ceny na
+      metr čtvereční a umístit posuzovaný objekt do tohoto spektra.
+    </p>
+    <h2>Lokalita Vysoké&nbsp;Mýto v kontextu kraje</h2>
+    <p>
+      Vysoké&nbsp;Mýto se nachází v Ústeckoorlickém okrese na důležité křižovatce
+      silnic I/35 a I/17. Díky napojení na plánovanou dálnici D35 a blízkosti
+      Pardubic a Hradce&nbsp;Králové je region atraktivní pro logistické a
+      výrobní firmy. V posledních letech zde vyrostlo několik distribučních
+      center a průmyslových zón. Zároveň je město obklopeno zemědělskou krajinou,
+      takže starší haly jsou často jedinými většími objekty ve svém okolí.
+    </p>
+    <p>
+      Poptávku po výrobních a logistických prostorech podporuje trend
+      reindustrializace a nearshoringu【9†L19-L24】, kdy firmy přesouvají výrobu
+      zpět do Evropy kvůli narušeným globálním řetězcům. Odborné studie
+      poukazují na to, že většina transakcí výrobních hal v&nbsp;Pardubickém kraji
+      se uzavírá v intervalu <strong>15&nbsp;000–23&nbsp;000&nbsp;Kč/m²</strong>【22†L13-L23】,
+      zatímco námi posuzovaná nemovitost se prodává za <strong>≈10&nbsp;109&nbsp;Kč/m²</strong>【19†L45-L47】.
+      To naznačuje, že objekt je cenově pod průměrem regionu a má potenciál
+      pro zhodnocení.
+    </p>
+
+    <h2>Srovnatelná data</h2>
+    <p>
+      Pro analýzu trhu jsme sestavili datovou sadu srovnatelných nabídek
+      průmyslových hal v&nbsp;Pardubickém kraji. V tabulce níže najdete
+      klíčové parametry – lokalitu, výměru, celkovou cenu, cenu na m² a krátký
+      popis. Tato data slouží jako vstup nejen pro vizuální analýzu, ale i pro
+      funkci kalkulačky v této aplikaci.
+    </p>
+    <div class="table-responsive">
+      <table id="comparables-table">
+        <thead>
+          <tr>
+            <th>Lokalita</th>
+            <th>Plocha</th>
+            <th>Celková cena</th>
+            <th>Cena za m²</th>
+            <th>Popis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data budou dynamicky načtena pomocí script.js -->
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Graf cenové distribuce</h2>
+    <p>
+      Následující sloupcový graf zobrazuje ceny za m² u vybraných nabídek.
+      Posuzovaná hala ve Vysokém&nbsp;Mýtě je zvýrazněna červeně. Je patrné,
+      že většina hal v regionu se pohybuje mezi 15–23&nbsp;tisíci Kč/m², přičemž
+      extrémní hodnoty (např. Litomyšl) souvisí s malou plochou a prémiovou
+      centrální polohou【15†L8-L20】. Naopak nejlevnější haly vyžadují rozsáhlé
+      rekonstrukce nebo se nacházejí mimo hlavní koridory【21†L13-L17】.
+    </p>
+    <figure>
+      <img src="/assets/images/comparison_plot2.png" alt="Srovnání cen za m² – výrobní haly v Pardubickém kraji" style="max-width:100%;height:auto;">
+      <figcaption>Sloupcový graf odhaluje, jak cenově vyčnívá litomyšlská nabídka (43&nbsp;K&nbsp;Kč/m²) a zároveň jak nízko je naceněna posuzovaná hala ve Vysokém&nbsp;Mýtě (≈10&nbsp;k Kč/m²). Data vycházejí z analýzy realitních transakcí v letech 2023–2025【19†L45-L47】.</figcaption>
+    </figure>
+
+    <h2>Interpretace a závěr</h2>
+    <p>
+      Přehled tabulky a grafu potvrzuje, že výrobní haly podobné velikosti v
+      Pardubickém kraji dosahují výrazně vyšších jednotkových cen než posuzovaný
+      objekt. Medián cen v souboru je kolem <strong>13&nbsp;700&nbsp;Kč/m²</strong>【22†L13-L23】.
+      Analyzovaná budova ve Vysokém&nbsp;Mýtě proto představuje
+      <em>potenciálně výhodnou investici</em>, obzvlášť pokud bude provedena
+      modernizace a bude lépe prezentována. Další podrobnosti a doporučení
+      naleznete v&nbsp;navazujících kapitolách souhrnu.
+    </p>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Tým pro analýzu nemovitostí – Vysoké&nbsp;Mýto. Tento web
+        byl vytvořen jako ukázka profesionálního rozcestníku a kalkulačky pro
+        průmyslové nemovitosti.</p>
+    </div>
+  </footer>
+</body>
+</html>

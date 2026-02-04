@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulačka odhadu hodnoty</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script defer src="/assets/calculator.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Výrobní hala – web aplikace</div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Úvod</a></li>
+          <li><a href="/pages/expert-report.html">Znalecký posudek</a></li>
+          <li><a href="/pages/reaction.html">Naše reakce</a></li>
+          <li><a href="/pages/critique.html">Kritika</a></li>
+          <li><a href="/pages/price-estimate.html">Cenový odhad</a></li>
+          <li><a href="/pages/location-analysis.html">Analýza lokality</a></li>
+          <li><a href="/pages/summary.html">Souhrnný report</a></li>
+          <li><a href="/pages/calculator.html" class="active">Kalkulačka</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Kalkulačka tržního odhadu</h1>
+    <p>
+      Tato jednoduchá kalkulačka umožňuje odhadnout hodnotu průmyslové haly na
+      základě plochy a (volitelně) Vaší očekávané ceny za metr čtvereční. Výpočet
+      se opírá o medián cen z databáze srovnatelných nabídek v&nbsp;Pardubickém
+      kraji (~13&nbsp;700&nbsp;Kč/m²)【22†L13-L23】. Výstupy berte jako orientační –
+      skutečnou hodnotu ovlivňuje stav budovy, lokalita, vybavení a výnosový potenciál.
+    </p>
+    <form id="calc-form" class="calculator-form">
+      <label for="area-input">Užitná plocha (m²)</label>
+      <input type="number" id="area-input" name="area" min="1" placeholder="Např. 1285" required>
+      <label for="price-per-m2-input">Cenová představa (Kč/m²)</label>
+      <input type="number" id="price-per-m2-input" name="price" min="1000" placeholder="Např. 15000">
+      <button type="submit">Spočítat</button>
+    </form>
+    <div id="calc-result" class="calculator-result"></div>
+    <p style="margin-top:1rem; font-size:0.9rem; color:#666;">
+      Výsledný interval vychází z mediánu cen srovnatelných hal. Pokud zadáte
+      vlastní cenu za m², kalkulačka zobrazí i celkovou hodnotu a porovná ji s
+      mediánem. Údaje slouží pouze pro informativní účely.
+    </p>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Tým pro analýzu nemovitostí – Vysoké&nbsp;Mýto. Kalkulačka je
+        součástí edukativního projektu a neposkytuje závazná investiční doporučení.</p>
+    </div>
+  </footer>
+</body>
+</html>

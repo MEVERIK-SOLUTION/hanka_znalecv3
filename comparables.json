@@ -1,0 +1,82 @@
+[
+  {
+    "id": "vysoke_myto",
+    "location": "Vysoké Mýto (posuzovaný objekt)",
+    "area": 1285,
+    "price": 12990000,
+    "price_per_m2": 10109,
+    "description": "Víceúčelový objekt se třemi byty, chladicími prostory a výtahy, nová elektroinstalace a klimatizace."
+  },
+  {
+    "id": "hrusova",
+    "location": "Hrušová (Ústí nad Orlicí)",
+    "area": 1100,
+    "price": 19960000,
+    "price_per_m2": 18145,
+    "description": "Dvě propojené budovy s pozemkem a možností vytvořit 2–3 bytové jednotky; napojení na inženýrské sítě."
+  },
+  {
+    "id": "chroustovice",
+    "location": "Chroustovice (Chrudim)",
+    "area": 600,
+    "price": 10999000,
+    "price_per_m2": 18332,
+    "description": "Truhlárna se skladem, louhárnou a bytem 2+1; kotel na tuhá paliva i plyn; betonové podlahy."
+  },
+  {
+    "id": "studanka",
+    "location": "Pardubice – Studánka (Průmyslová)",
+    "area": 600,
+    "price": 13980000,
+    "price_per_m2": 23300,
+    "description": "Čtyři propojené haly (dvě zděné, dvě ocelové), kanceláře a sociální zázemí; roční výnos z pronájmu ~1,1 mil. Kč."
+  },
+  {
+    "id": "drazkovice",
+    "location": "Pardubice – Dražkovice",
+    "area": 941,
+    "price": 19900000,
+    "price_per_m2": 21148,
+    "description": "Dvě budovy (přednáškové sály, sklad a byt správce) na pozemku; napojení na všechny sítě."
+  },
+  {
+    "id": "chrudim_rubesova",
+    "location": "Chrudim (Rubešova)",
+    "area": 1784,
+    "price": 24900000,
+    "price_per_m2": 13957,
+    "description": "Areál s výrobními a obchodními plochami a sklady; součástí pronajaté truhlářství a zámečnická dílna."
+  },
+  {
+    "id": "litomysl",
+    "location": "Litomyšl (T.G. Masaryka)",
+    "area": 411,
+    "price": 17990000,
+    "price_per_m2": 43771,
+    "description": "Cihlová budova k průmyslové zástavbě v centru města; stav před rekonstrukcí, cena k jednání."
+  },
+  {
+    "id": "hlinsko",
+    "location": "Hlinsko",
+    "area": 5150,
+    "price": 25000000,
+    "price_per_m2": 4854,
+    "description": "Rozsáhlý areál z roku 1964 napojený na vodovod, elektřinu a plyn; vhodný pro lehkou průmyslovou výrobu nebo skladování."
+  },
+  {
+    "id": "borusov",
+    "location": "Borůšov u Moravské Třebové",
+    "area": 700,
+    "price": 7500000,
+    "price_per_m2": 10714,
+    "description": "Skladovací hala s půdním prostorem a přestavěnou nástrojárnou; vyžaduje rekonstrukci střechy; lokální napojení."
+  },
+  {
+    "id": "pardubice_drazkovice_h",
+    "location": "Pardubice – Dražkovice (Hrušová)",
+    "area": 941,
+    "price": 19900000,
+    "price_per_m2": 21148,
+    "description": "Samostatný areál se dvěma budovami; napojení na kanalizaci, vodu a plynovou přípojku; výborná dopravní dostupnost."
+  }
+]
