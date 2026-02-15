@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // runs on nested pages (e.g. /pages/calculator.html) the
   // comparables JSON is pulled from /assets/comparables.json rather than
   // attempting to resolve relative to the current directory.
-  fetch('/assets/comparables.json')
+  fetch('/assets/data/comparables.json')
     .then(res => res.json())
     .then(data => {
       comparablesData = data;

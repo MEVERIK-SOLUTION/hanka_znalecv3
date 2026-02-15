@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // runs on nested pages (e.g. /pages/location-analysis.html) the
     // comparables JSON is pulled from /assets/comparables.json rather than
     // attempting to resolve relative to the current directory.
-    fetch('/assets/comparables.json')
+    fetch('/assets/data/comparables.json')
       .then(response => response.json())
       .then(data => {
         // Build table rows
