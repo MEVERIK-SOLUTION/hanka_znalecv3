@@ -1,52 +1,193 @@
-# Nasazení webové aplikace na Vercel
+# Hanka Znalec v3 - Profesionální aplikace pro ocenění nemovitostí
 
-Tento projekt obsahuje statickou webovou aplikaci ve složce `website/`. Pokud chceš aplikaci nasadit pomocí Vercel, postupuj podle následujících kroků:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/MEVERIK-SOLUTION/hanka_znalecv3)
 
----
+Moderní webová aplikace pro komplexní analýzu a ocenění výrobních hal v Pardubickém kraji. Aplikace poskytuje znalecké posudky, cenové analýzy, srovnání s trhem a interaktivní kalkulačku.
 
-## 🪜 Krok za krokem
+## 🚀 Rychlé nasazení
 
-### 1. Vytvoř GitHub repozitář
+**Aplikace je připravena k okamžitému nasazení!**
 
-1. Přejdi na https://github.com/new
-2. Zadej název repozitáře (např. `znalecky-posudek`)
-3. Nezaškrtávej „Initialize this repository with a README“
-4. Klikni na „Create repository“
+```bash
+# Ověření připravenosti k nasazení
+./deploy-check.sh
 
----
+# Nebo nasaďte jedním kliknutím:
+# https://vercel.com/new/clone?repository-url=https://github.com/MEVERIK-SOLUTION/hanka_znalecv3
+```
 
-### 2. Nahraj soubory
+📖 **Detailní instrukce**: Viz [DEPLOYMENT.md](DEPLOYMENT.md)
 
-1. Rozbal přiložený ZIP soubor a otevři složku `deploy-package`.
-2. Nahraj celý obsah složky (soubor `vercel.json` a adresář `website/` se soubory) do kořenového adresáře repozitáře na GitHubu.
-3. Klikni na „Commit changes“.
+## 🎯 Funkce
 
----
+- **Znalecké posudky** - Detailní analýza nemovitostí s technickým stavem
+- **Cenová analýza** - Porovnání s trhem na základě regionálních dat
+- **Interaktivní kalkulačka** - Výpočet odhadované hodnoty nemovitosti
+- **Vizualizace dat** - Grafy a tabulky pro snadné porovnání
+- **Responzivní design** - Funguje na všech zařízeních
 
-### 3. Přejdi na Vercel a konfiguruj nasazení
+## 📁 Struktura projektu
 
-1. Jdi na [https://vercel.com/import/git](https://vercel.com/import/git) a přihlas se.
-2. Vyber svůj GitHub repozitář.
-3. Vercel si nastavení přečte z přiloženého souboru `vercel.json`. Je nastaven takto:
+```
+hanka_znalecv3/
+├── website/                    # Hlavní webová aplikace
+│   ├── index.html             # Úvodní stránka
+│   ├── pages/                 # Další stránky aplikace
+│   │   ├── calculator.html    # Kalkulačka
+│   │   ├── expert-report.html # Znalecký posudek
+│   │   ├── critique.html      # Kritická analýza
+│   │   ├── price-estimate.html # Cenový odhad
+│   │   ├── location-analysis.html # Analýza lokality
+│   │   ├── reaction.html      # Reakce na posudek
+│   │   └── summary.html       # Souhrnný report
+│   └── assets/                # Statické soubory
+│       ├── css/               # Styly
+│       │   └── style.css
+│       ├── js/                # JavaScript soubory
+│       │   ├── script.js      # Hlavní skript
+│       │   └── calculator.js  # Kalkulačka
+│       ├── data/              # Data
+│       │   └── comparables.json # Srovnatelné nemovitosti
+│       └── images/            # Obrázky a grafy
+│           ├── comparison_plot.png
+│           └── comparison_plot2.png
+├── vercel.json                # Konfigurace pro Vercel
+├── package.json               # NPM dependencies
+└── README.md                  # Tato dokumentace
+```
+
+## 🛠️ Lokální vývoj
+
+### Předpoklady
+- Node.js (verze 14 nebo vyšší)
+- npm nebo yarn
+
+### Instalace a spuštění
+
+1. **Klonování repozitáře**
+   ```bash
+   git clone https://github.com/MEVERIK-SOLUTION/hanka_znalecv3.git
+   cd hanka_znalecv3
+   ```
+
+2. **Spuštění vývojového serveru**
+   ```bash
+   npm run dev
+   ```
+   
+   Aplikace bude dostupná na `http://localhost:3000`
+
+3. **Alternativně - použití jiného serveru**
+   ```bash
+   # Pomocí Python
+   cd website
+   python -m http.server 3000
+   
+   # Pomocí PHP
+   cd website
+   php -S localhost:3000
+   ```
+
+## 📦 Nasazení na Vercel
+
+### Automatické nasazení přes GitHub
+
+1. Přejdi na [vercel.com](https://vercel.com) a přihlas se
+2. Klikni na "New Project"
+3. Importuj tento GitHub repozitář
+4. Vercel automaticky detekuje konfiguraci z `vercel.json`
+5. Klikni na "Deploy"
+
+Aplikace bude dostupná na `https://tvuj-projekt.vercel.app`
+
+### Manuální nasazení
+
+```bash
+# Instalace Vercel CLI
+npm install -g vercel
+
+# Nasazení
+vercel
+```
+
+## 🎨 Přizpůsobení
+
+### Úprava dat o nemovitostech
+
+Data o srovnatelných nemovitostech jsou uložena v souboru `website/assets/data/comparables.json`. Pro přidání nebo úpravu nemovitostí edituj tento soubor:
 
 ```json
 {
-  "builds": [
-    { "src": "website/**", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "website/$1" }
-  ]
+  "id": "unikatni_id",
+  "location": "Název lokality",
+  "area": 1285,
+  "price": 12990000,
+  "price_per_m2": 10109,
+  "description": "Popis nemovitosti"
 }
 ```
 
-Tato konfigurace říká Vercelu, aby jako kořenový adresář webu použil složku `website/`. Díky tomu není potřeba přesouvat soubory.
-4. Klikni na „Deploy“. Vercel nasadí tvůj web a vygeneruje adresu ve tvaru `https://nazev-projektu.vercel.app/`.
+### Úprava stylů
+
+Hlavní stylesheet se nachází v `website/assets/css/style.css`. Používá CSS proměnné pro snadné přizpůsobení barev:
+
+```css
+:root {
+  --primary-color: #005fc0;
+  --secondary-color: #007ee5;
+  --light-color: #f5f7fa;
+}
+```
+
+## 🧪 Testování
+
+Pro testování aplikace před nasazením:
+
+```bash
+# Spusť lokální server
+npm run dev
+
+# Otevři v prohlížeči
+http://localhost:3000
+```
+
+Zkontroluj:
+- ✅ Všechny stránky se správně načítají
+- ✅ Kalkulačka funguje správně
+- ✅ Data se zobrazují v tabulkách
+- ✅ Obrázky se načítají
+- ✅ Odkazy fungují
+
+## 📝 Technologie
+
+- **HTML5** - Struktura stránek
+- **CSS3** - Moderní styling s flexboxem a responzivním designem
+- **JavaScript (Vanilla)** - Interaktivní funkce bez závislostí
+- **JSON** - Strukturovaná data
+- **Vercel** - Hosting a deployment
+
+## 📄 Licence
+
+ISC
+
+## 👥 Autor
+
+Analytický tým - MEVERIK SOLUTION
+
+## 🤝 Přispívání
+
+Návrhy na vylepšení jsou vítány! Pro přispění:
+
+1. Fork repozitáře
+2. Vytvoř feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit změny (`git commit -m 'Add some AmazingFeature'`)
+4. Push do branch (`git push origin feature/AmazingFeature`)
+5. Otevři Pull Request
+
+## 📞 Podpora
+
+Pro otázky a podporu otevřete issue v GitHub repozitáři.
 
 ---
 
-### ✅ Hotovo!
-
-Po nasazení bude tvůj web dostupný na generované URL adrese bez chyby 404.
-
-Pokud by se něco nepovedlo nebo máš otázky, dej mi vědět. Rád pomůžu!
+**Verze 3.0** - Profesionální reorganizace s moderní strukturou projektu

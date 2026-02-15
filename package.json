@@ -1,0 +1,22 @@
+{
+  "name": "hanka-znalecv3",
+  "version": "3.0.0",
+  "description": "Profesionální webová aplikace pro analýzu a ocenění výrobních hal v Pardubickém kraji",
+  "main": "website/index.html",
+  "scripts": {
+    "dev": "npx serve website -p 3000",
+    "start": "npx serve website -p 3000",
+    "preview": "npx serve website"
+  },
+  "keywords": [
+    "real-estate",
+    "appraisal",
+    "Czech",
+    "industrial-property"
+  ],
+  "author": "Analytický tým",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
