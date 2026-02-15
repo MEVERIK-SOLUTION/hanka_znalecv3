@@ -1,8 +1,24 @@
 # Hanka Znalec v3 - Profesionální aplikace pro ocenění nemovitostí
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/MEVERIK-SOLUTION/hanka_znalecv3)
+
 Moderní webová aplikace pro komplexní analýzu a ocenění výrobních hal v Pardubickém kraji. Aplikace poskytuje znalecké posudky, cenové analýzy, srovnání s trhem a interaktivní kalkulačku.
 
-## 🚀 Funkce
+## 🚀 Rychlé nasazení
+
+**Aplikace je připravena k okamžitému nasazení!**
+
+```bash
+# Ověření připravenosti k nasazení
+./deploy-check.sh
+
+# Nebo nasaďte jedním kliknutím:
+# https://vercel.com/new/clone?repository-url=https://github.com/MEVERIK-SOLUTION/hanka_znalecv3
+```
+
+📖 **Detailní instrukce**: Viz [DEPLOYMENT.md](DEPLOYMENT.md)
+
+## 🎯 Funkce
 
 - **Znalecké posudky** - Detailní analýza nemovitostí s technickým stavem
 - **Cenová analýza** - Porovnání s trhem na základě regionálních dat
